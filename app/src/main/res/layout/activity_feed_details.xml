@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FeedDetails">
+        <RelativeLayout
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/ImgBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_back"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_bookmark"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/ImgFeed"
+            android:layout_below="@id/Toolbar"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="300dp"/>
+        <TextView
+            android:layout_below="@id/ImgFeed"
+            android:id="@+id/TxtHeadlines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:text="IND vs ENG, 2nd ODI Live Score: KL Rahul Departs, Rishabh Pant Key As India Eye Big Finish"/>
+        <RelativeLayout
+            android:id="@+id/RelAuthor"
+            android:layout_below="@id/TxtHeadlines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/LightGrey">
+            <TextView
+                android:id="@+id/TxtAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steve Smith"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/TxtTime"
+                android:layout_toRightOf="@id/TxtAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | 15 mins ago"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/TxtType"
+                android:layout_toRightOf="@id/TxtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | News"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@id/RelAuthor"
+            android:id="@+id/TxtContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+</ScrollView>
